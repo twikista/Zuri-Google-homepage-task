@@ -42,7 +42,8 @@ body{
 .header-section .nav-wrap a{
     margin-right: 1.5rem;
     text-decoration: none;
-    color:#424242
+    color:#424242;
+    font-size:0.85rem ;
 }
 
 .header-section .nav-wrap a:hover{
@@ -50,7 +51,19 @@ body{
 }
 
 .header-section .nav-wrap .icon-wrap{
-    background-position: center;   
+    background-position: center; 
+    /* background-color: #cccccc;  */
+    display: flex;
+    height: 50px; 
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    /* padding: 1rem; */
+    border-radius: 50%;
+}
+
+.header-section .nav-wrap .icon-wrap:hover{
+    background-color: #eeeeee; 
 }
 
 .header-section .nav-wrap .icon-wrap a{
@@ -58,10 +71,11 @@ body{
 }
 
 .header-section .nav-wrap .icon-wrap img{
-    /* background-color: #f5f5f5; */
-    width: 25%;
-    height: auto;
+    width: 20px;
+    /* height: auto; */
     display: inline-block;
+    margin: 0 auto;
+    transform: translateX(60%)
 }
 
 
@@ -79,13 +93,15 @@ body{
 }
 
 .main-content .logo-wrapper img{
-    max-width: 17rem;
+    max-width: 100%;
+    height: auto;
 }
 
 .search-container{
     border: 1px solid #dddddd;
     border-radius: 50px;
-    width:600px;
+    width:40%;
+    min-width: 18rem;
     display: grid;
     grid-template-columns: 0.1fr 5fr 0.6fr;
     overflow: hidden;
@@ -221,6 +237,53 @@ border: none;
     display: inline-block;
     transform: translateY(30%);   
 }
+
+/* media query */
+
+@media(max-width:768px){
+.main-content .logo-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.main-content .logo-wrapper img{
+    max-width: 60%;
+    }
+
+.buttons .btn{
+    padding:0.5rem 0.9rem;
+    font-size: 0.7rem;    
+}
+
+.language{
+    padding: 0 0.5rem;
+    font-size: 0.7rem;
+}
+
+
+
+.page-footer .footer-top p{
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+
+.footer-bottom{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0.5rem 1rem;
+}
+
+.footer-bottom .sales, .footer-bottom .eco-friendly{
+    margin-bottom: 0.7rem;
+}
+
+.footer-bottom a{
+    font-size: 0.7rem;
+}
+
+
 
 
 
