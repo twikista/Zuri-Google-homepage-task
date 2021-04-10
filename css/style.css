@@ -112,10 +112,42 @@ body{
 
 .search-container .button-mic img{
     width: auto;
-    height: 32px;
-    /* padding-top: 0.3rem; */
+    height: 2rem;
         
 }
+
+.buttons{
+    display: flex;
+    margin:2rem 0 2rem 0; 
+}
+
+.buttons .btn{
+    padding:0.7rem 1.2rem;
+    border: none;
+    font-size: 0.85rem;
+    background-color: #f8f8f8;
+}
+
+.buttons .btn:first-child{
+    margin-right: 10px;
+}
+
+.language{
+    font-size:0.8rem
+}
+
+.language a{
+    text-decoration: none;
+    margin-right: 0.8rem;
+
+}
+
+.language a:hover{
+    text-decoration: underline;
+    
+}
+
+
 
 
 
