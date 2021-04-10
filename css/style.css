@@ -21,15 +21,50 @@ body{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 4fr 1fr;
-    overflow-y: hidden;
+    
     
 }
 
 .header-section{
     grid-row:1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     border: 2px solid red;
-
 }
+
+.header-section .nav-wrap{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.header-section .nav-wrap a{
+    margin-right: 1.5rem;
+    text-decoration: none;
+    color:#424242
+}
+
+.header-section .nav-wrap a:hover{
+    text-decoration: underline;
+}
+
+.header-section .nav-wrap .icon-wrap{
+    background-position: center;   
+}
+
+.header-section .nav-wrap .icon-wrap a{
+    display: inline-block;
+}
+
+.header-section .nav-wrap .icon-wrap img{
+    /* background-color: #f5f5f5; */
+    width: 25%;
+    height: auto;
+    display: inline-block;
+}
+
 
 .main-content{
     grid-row:2;
